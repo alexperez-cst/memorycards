@@ -1,7 +1,8 @@
 {
+	"homepage": "http://alexperez-cst.github.io/memorycards/",
   "name": "memorygamecard",
   "version": "0.1.0",
-  "private": true,
+	"private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
@@ -14,6 +15,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+		"predeploy":"npm run deploy",
+		"deploy": "gh-pages -d build",
     "start": "PORT=2011 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
